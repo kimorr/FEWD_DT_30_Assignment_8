@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relaxr - Sign Up</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+			<div class="container">
+				<div class="mobile-header-container">
+					<h1 class="logo">Relaxr</h1>
+					<div id="hamburger_btn">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="signup">
+			<div class="container">
+				<h3>Register Now!</h3>
+				<form>
+					<div class="clearfix">
+						<div class="form_labels clearfix">
+							<label for="userName">Name:</label>
+
+							<label for="userEmail">Email:</label>
+
+							<label for="userPhone">Phone:</label>
+
+							<label for="userState">State:</label>
+
+							<label for="userPass">Password:</label>
+
+							<p>Which services are you interested in?</p>
+						</div>
+						<div class="form_inputs clearfix">
+							<input type="text" placeholder="Jane Smith" name="userName" id="userName">
+
+							<input type="email" placeholder="janesmith@gmail.com" name="userEmail" id="userEmail">
+
+							<input type="tel" placeholder="323-867-5309" name="userPhone" id="userPhone">
+
+							<select name="userState" id="userState">
+								<option>Alabama</option>
+								<option>Alaska</option>
+								<option>Arizona</option>
+								<option>Arkansas</option>
+								<option>California</option>
+							</select>
+
+							<input type="password" name="userPass" id="userPass">
+
+							<div class="radio_btn">
+								<input type="radio" name="services" value="relaxing" id="relaxing">
+								<label for="relaxing">Relaxing</label>
+							</div>
+
+							<div class="radio_btn">
+								<input type="radio" name="services" value="email" id="email">
+								<label for="email">Email</label>
+							</div>
+							
+							<div class="radio_btn">
+								<input type="radio" name="services" value="phone" id="phone">
+								<label for="phone">Phone</label>
+							</div>
+						</div>
+					</div>
+					<div class="terms_container">
+							<input type="checkbox" name="terms" value="agree" id="terms">
+							<label for="terms">I agree to the terms</label>
+					</div>
+					<button class="button blue">Register Now</button>
+				</form>
+				
+			</div>
+		</section>
+</body>
+</html>

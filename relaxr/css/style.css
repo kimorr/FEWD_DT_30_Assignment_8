@@ -1,0 +1,577 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+header {
+  background: #033048;
+  padding: 1em 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+}
+
+#hamburger_btn {
+  width: 45px;
+  float: right;
+  display: none;
+  padding: .2em .2em 0 .2em;
+  margin-top: .5em;
+}
+
+#hamburger_btn:hover {
+  border: 1px solid #f9e42e;
+}
+
+#hamburger_btn .line {
+  border-top: 4px solid #f9e42e;
+  border-radius: 2px;
+  padding-bottom: .2em;
+}
+
+header nav {
+  float: right;
+  margin-top: .5em;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  font-size: .9em;
+}
+header nav ul li a {
+  color: #f9e42e;
+}
+
+#hero {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat center #131e27;
+  padding-top: 1.2em;
+}
+
+#hero .logo {
+  color: #fff;
+}
+#hero h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #fff;
+  margin: 2.5em 0 2em;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: .4em 0;
+  width: 30%;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: .9em;
+}
+#benefits {
+  padding: 2.5em 0 2em;
+}
+h3 {
+  color: #033048;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+#benefits p, #benefits ul {
+  width: 63%;
+}
+#benefits ul {
+  list-style: disc;
+  margin: 1em 0 0 3em;
+}
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat center #071324;
+  padding: 2.7em 0;
+  color: #fff;
+}
+blockquote {
+  font-size: 1.35em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+#main {
+  margin-top: 3.1em;
+}
+
+#posts {
+  width: 72%;
+  float: left;
+  margin-right: .8em;
+}
+
+#sidebar {
+  width: 25%;
+  float: left;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: 1em;
+  width: 100%;
+}
+.post p {
+  font-size: .9em;
+  line-height: 1.333;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 4em;
+  line-height: .8em;
+  padding-top: .05em;
+  padding-right: .1em;
+  padding-left: .03em;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 1.2rem;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+/*.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}*/
+
+#sidebar h3 {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-bottom: .5rem;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: 2rem;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: .9em;
+}
+#sidebar p {
+  font-size: .85em;
+  line-height: 1.1;
+  margin-bottom: 1.8rem;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: 2.5em 0 1.7em;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 2.6rem;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1rem 2.8rem;
+}
+footer p {
+  font-size: .7em;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Form Styles */
+
+#signup h3 {
+  margin: 1em 0;
+}
+
+.form_labels {
+  width: 30%;
+  float: left;
+  text-align: left;
+  font-size: .8em;
+}
+
+.form_labels label {
+  display: block;
+  padding-bottom: 1em;
+}
+
+.form_inputs input, .form_inputs select {
+  display: block;
+  width: 50%;
+  height: 3em;
+  padding: 1em;
+  margin-bottom: 1.1em;
+  border: none;
+  border-bottom: 1px solid #033048;
+}
+
+input::placeholder {
+  font-size: 1.5em;
+  color: lightgray;
+}
+
+.radio_btn input {
+  float: left;
+  display: inline;
+  width: 2em;
+  margin-top: 1em;
+
+}
+
+.radio_btn label {
+  float: left;
+  display: inline;
+  margin-right: 1em;
+  font-size: .8em;
+  padding-top: .5em;
+}
+
+select {
+  font-size: .6em;
+  height: 1em;
+}
+
+form button {
+  float: left;
+  border: none;
+}
+
+.terms_container {
+  width: 100%;
+  padding: .5em 0 1em;
+  font-size: .8em;
+}
+
+/* TABLET BREAKPOINT */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .mobile-header-container {
+    width: 100%;
+  }
+
+  header {
+    padding: .8em 0;
+  }
+
+  #hamburger_btn {
+    display: block;
+  }
+
+  header nav {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .mobile_nav {
+    width: 100%;
+  }
+
+  .mobile-nav ul {
+    display: list-item;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .mobile-nav ul li {
+    display: list-item;
+    padding: .5em;
+    margin: 0;
+  }
+
+  #hero {
+    height: 50%;
+    padding: 1.5em;
+  }
+
+  #hero h2 {
+    font-size: 1.3em;
+    margin: 1em 0;
+  }
+
+  .button {
+    padding: .3em 0;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    min-width: 200px;
+  }
+
+  .blue {
+    font-size: 1em;
+  }
+
+  #benefits {
+    padding: 1.5em 1.5em 1.5em 0;
+  }
+
+  #benefits p, #benefits ul {
+    width: 100%;
+  }
+
+  #benefits ul {
+    margin: 1em 0 0 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+  }
+
+  #testimonial {
+    padding: 1.5em 0;
+  }
+
+  blockquote {
+    font-size: 1.1em;
+    width: 80%;
+  }
+
+  blockquote span {
+    margin-top: .5em;
+  }
+
+  #main {
+    margin-top: 1.5em
+  }
+
+  #posts {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #sidebar {
+    width: 100%;
+  }
+
+  .post h2 {
+    font-size: 1.3em;
+  }
+
+  .post p {
+    font-size: 1em;
+  }
+
+  .post p:first-of-type:first-letter {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0 0 0 0;
+    font-weight: 300;
+  }
+
+  .readmore {
+    text-align: left;
+  }
+
+  #sidebar {
+    text-align: center;
+  }
+
+  #sidebar h3 {
+    font-size: 1.3em;
+  }
+
+  #sidebar ul li {
+    padding: .5em 0;
+    background-color: #043049;
+    border-bottom: 2px solid white;
+  }
+
+  #sidebar ul li a {
+    font-size: 1.1em;
+    color: white;
+  }
+
+  #sidebar ul li:hover {
+    background-color: #f9e42e;
+    color: #043049;
+  }
+
+  #sidebar ul li a:hover {
+    color: #043049;
+  }
+
+  #sidebar p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  #sidebar img {
+    width: 100%;
+  }
+
+  #bottom-cta {
+    padding: 1em 0 0;
+  }
+
+  footer {
+    padding: 1em 0;
+  }
+
+  footer .logo {
+    margin-bottom: .5em;
+  }
+
+  footer ul li {
+    margin: 0 .5em 1em;
+  }
+
+  footer ul li img {
+    transform: scale(.8);
+  }
+
+  .form_labels label {
+    padding-bottom: 1.7em;
+  }
+
+  .radio_btn label {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+}
+
